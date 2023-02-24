@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 6.0.2 (Python 3.11.2 on win32)" generated="20230224 18:13:24.427" rpa="false" schemaversion="3">
+<suite id="s1" name="pythonProject" source="C:\Users\shais\PycharmProjects\pythonProject">
+<suite id="s1-s1" name="Tests" source="C:\Users\shais\PycharmProjects\pythonProject\tests">
+<suite id="s1-s1-s1" name="TC04 UI Validation" source="C:\Users\shais\PycharmProjects\pythonProject\tests\TC04_UI_Validation.robot">
+<test id="s1-s1-s1-t1" name="Validate file upload Login" line="13">
+<kw name="open the browser with The Oppenheimer Project url">
+<kw name="Create Webdriver" library="SeleniumLibrary">
+<arg>Chrome</arg>
+<arg>executable_path={Chrome_driver}</arg>
+<doc>Creates an instance of Selenium WebDriver.</doc>
+<msg timestamp="20230224 18:13:24.663" level="INFO">Creating an instance of the Chrome WebDriver.</msg>
+<status status="PASS" starttime="20230224 18:13:24.663" endtime="20230224 18:13:26.220"/>
+</kw>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>http://localhost:8080/</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20230224 18:13:26.220" level="INFO">Opening url 'http://localhost:8080/'</msg>
+<status status="PASS" starttime="20230224 18:13:26.220" endtime="20230224 18:13:27.205"/>
+</kw>
+<status status="PASS" starttime="20230224 18:13:24.663" endtime="20230224 18:13:27.206"/>
+</kw>
+<kw name="Navigate to file path">
+<kw name="Choose File" library="SeleniumLibrary">
+<arg>//input[@type='file']</arg>
+<arg>C:\\Users\\shais\\PycharmProjects\\pythonProject\\tests${/}\\Data\\Sample_CSV.csv</arg>
+<doc>Inputs the ``file_path`` into the file input field ``locator``.</doc>
+<msg timestamp="20230224 18:13:27.209" level="INFO">Sending C:\Users\shais\PycharmProjects\pythonProject\tests\Data\Sample_CSV.csv to browser.</msg>
+<status status="PASS" starttime="20230224 18:13:27.208" endtime="20230224 18:13:27.255"/>
+</kw>
+<status status="PASS" starttime="20230224 18:13:27.207" endtime="20230224 18:13:27.255"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20230224 18:13:27.255" endtime="20230224 18:13:29.481"/>
+</kw>
+<status status="PASS" starttime="20230224 18:13:24.663" endtime="20230224 18:13:29.481"/>
+</test>
+<doc>To validate the Login form</doc>
+<status status="PASS" starttime="20230224 18:13:24.443" endtime="20230224 18:13:29.481"/>
+</suite>
+<status status="PASS" starttime="20230224 18:13:24.443" endtime="20230224 18:13:29.481"/>
+</suite>
+<status status="PASS" starttime="20230224 18:13:24.427" endtime="20230224 18:13:29.481"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="pythonProject">pythonProject</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Tests">pythonProject.Tests</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="TC04 UI Validation">pythonProject.Tests.TC04 UI Validation</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20230224 18:13:24.443" level="ERROR">Error in file 'C:\Users\shais\PycharmProjects\pythonProject\tests\TC04_UI_Validation.robot' on line 9: Setting variable '{Chrome_driver}' failed: Invalid variable name '{Chrome_driver}'.</msg>
+</errors>
+</robot>
